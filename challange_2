@@ -1,0 +1,28 @@
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.8.9;
+import "hardhat/console.sol";
+
+
+contract conversion{
+    uint eth;
+    function get_ether(uint _eth) public {
+        eth=_eth;
+    }
+    function conversion_in_wei() public view returns(uint){
+        
+        return eth*10**18;
+        
+        
+    }
+    function conversion_in_gwei() public view returns(uint){
+        
+        return eth*10**9;
+        
+      
+    }
+    function conversion_in_eth() public view returns(uint){
+        
+        return eth;
+        
+    }
+}
