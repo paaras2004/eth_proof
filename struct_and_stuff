@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.8.9;
+contract simple{
+    struct Bank {
+        string sender;
+        string reciver;
+        uint amount;
+        address bank_add;
+    }
+    Bank public bank;
+    Bank[] public banks;
+    mapping(address=> Bank[]) public bankowner;
+    function transaction() external{
+        Bank memory first= Bank("abay","namen",100,msg.sender);
+        banks.push(first);
+
+
+    }
+    
+    
+}
