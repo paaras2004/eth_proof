@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.8.9;
+import "hardhat/console.sol";
+
+contract loops{
+    
+    function sub(uint n,uint a) external pure returns(uint){
+        
+        for(uint i=1 ; i<100 ;i++){
+            uint b;
+            b=b+n+a;
+            console.log(b);
+
+
+        }
+    
+
+    }
+}
